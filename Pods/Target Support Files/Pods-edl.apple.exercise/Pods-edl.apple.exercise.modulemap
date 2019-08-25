@@ -1,0 +1,6 @@
+framework module Pods_edl_apple_exercise {
+  umbrella header "Pods-edl.apple.exercise-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		629F3A2B49A51CDDD1636882 /* Pods_edl_apple_exercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D03BBE9B9D5B4FC97D30709 /* Pods_edl_apple_exercise.framework */; };
 		C443359B23119CB400773D41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C443359A23119CB400773D41 /* AppDelegate.swift */; };
 		C443359D23119CB400773D41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C443359C23119CB400773D41 /* ViewController.swift */; };
 		C44335A023119CB400773D41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C443359E23119CB400773D41 /* Main.storyboard */; };
 		C44335A223119CB400773D41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44335A123119CB400773D41 /* Assets.xcassets */; };
 		C44335A523119CB400773D41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44335A323119CB400773D41 /* LaunchScreen.storyboard */; };
+		C44335AF2311D8E000773D41 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44335AE2311D8E000773D41 /* AlbumTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D03BBE9B9D5B4FC97D30709 /* Pods_edl_apple_exercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_edl_apple_exercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		885B71AB2A0E085EFB4A3590 /* Pods-edl.apple.exercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edl.apple.exercise.debug.xcconfig"; path = "Target Support Files/Pods-edl.apple.exercise/Pods-edl.apple.exercise.debug.xcconfig"; sourceTree = "<group>"; };
+		B20277472491AE56E32F1436 /* Pods-edl.apple.exercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edl.apple.exercise.release.xcconfig"; path = "Target Support Files/Pods-edl.apple.exercise/Pods-edl.apple.exercise.release.xcconfig"; sourceTree = "<group>"; };
 		C443359723119CB400773D41 /* edl.apple.exercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = edl.apple.exercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C443359A23119CB400773D41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C443359C23119CB400773D41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		C44335A123119CB400773D41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C44335A423119CB400773D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C44335A623119CB400773D41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C44335AE2311D8E000773D41 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				629F3A2B49A51CDDD1636882 /* Pods_edl_apple_exercise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF532DB85809E6839E1980ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D03BBE9B9D5B4FC97D30709 /* Pods_edl_apple_exercise.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C443358E23119CB400773D41 = {
 			isa = PBXGroup;
 			children = (
 				C443359923119CB400773D41 /* edl.apple.exercise */,
 				C443359823119CB400773D41 /* Products */,
+				F4B1AC201A5204186DC60251 /* Pods */,
+				AF532DB85809E6839E1980ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,19 @@
 				C44335A123119CB400773D41 /* Assets.xcassets */,
 				C44335A323119CB400773D41 /* LaunchScreen.storyboard */,
 				C44335A623119CB400773D41 /* Info.plist */,
+				C44335AE2311D8E000773D41 /* AlbumTableViewCell.swift */,
 			);
 			path = edl.apple.exercise;
+			sourceTree = "<group>";
+		};
+		F4B1AC201A5204186DC60251 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				885B71AB2A0E085EFB4A3590 /* Pods-edl.apple.exercise.debug.xcconfig */,
+				B20277472491AE56E32F1436 /* Pods-edl.apple.exercise.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C44335A923119CB400773D41 /* Build configuration list for PBXNativeTarget "edl.apple.exercise" */;
 			buildPhases = (
+				90271F63E9590C80200F728D /* [CP] Check Pods Manifest.lock */,
 				C443359323119CB400773D41 /* Sources */,
 				C443359423119CB400773D41 /* Frameworks */,
 				C443359523119CB400773D41 /* Resources */,
+				CF7355086DFB9452FB63ED40 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +160,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		90271F63E9590C80200F728D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-edl.apple.exercise-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF7355086DFB9452FB63ED40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-edl.apple.exercise/Pods-edl.apple.exercise-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-edl.apple.exercise/Pods-edl.apple.exercise-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-edl.apple.exercise/Pods-edl.apple.exercise-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C443359323119CB400773D41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +209,7 @@
 			files = (
 				C443359D23119CB400773D41 /* ViewController.swift in Sources */,
 				C443359B23119CB400773D41 /* AppDelegate.swift in Sources */,
+				C44335AF2311D8E000773D41 /* AlbumTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,9 +353,11 @@
 		};
 		C44335AA23119CB400773D41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 885B71AB2A0E085EFB4A3590 /* Pods-edl.apple.exercise.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R89857D424;
 				INFOPLIST_FILE = edl.apple.exercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,9 +372,11 @@
 		};
 		C44335AB23119CB400773D41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B20277472491AE56E32F1436 /* Pods-edl.apple.exercise.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R89857D424;
 				INFOPLIST_FILE = edl.apple.exercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
